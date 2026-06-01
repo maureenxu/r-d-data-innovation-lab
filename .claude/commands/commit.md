@@ -1,4 +1,4 @@
-Stage and commit all current changes with a clear, concise commit message. Execute all steps automatically without asking for confirmation.
+Stage and commit all current changes with a clear, concise commit message.
 
 ## Steps
 
@@ -16,9 +16,11 @@ Stage and commit all current changes with a clear, concise commit message. Execu
    - No body unless the change genuinely needs explanation
    - Do not mention file names unless they are the point of the change
 
-5. Commit:
+5. Show the user the staged file list and proposed commit message. Ask them to confirm before proceeding.
+
+6. Commit:
    ```bash
    git commit -m "<your message>"
    ```
 
-6. Confirm success by showing the commit hash and subject line.
+7. Confirm success by showing the commit hash and subject line.
