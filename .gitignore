@@ -47,3 +47,4 @@ htmlcov/
 *cache/
 node_modules/
 .next/
+.claude/
