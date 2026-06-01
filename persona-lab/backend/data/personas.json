@@ -1,0 +1,77 @@
+[
+  {
+    "id": "persona_001",
+    "role": "Senior Lab Technician",
+    "department": "Liquid detergent",
+    "years_experience": 20,
+    "expertise_tags": [
+      "HPLC",
+      "PH analysis",
+      "Stability testing",
+      "DOE campaigns"
+    ],
+    "context_notes": "Works on daily stability runs and documents results in LIMS. Primary concern is throughput and reducing manual steps. Skeptical of new tools unless they integrate with existing systems. Prefers visual dashboards over raw data exports.",
+    "documents": [
+      {
+        "id": "doc_001",
+        "filename": "Stability-SOP-v4.pdf",
+        "extracted_text": "Standard Operating Procedure: Stability Testing. Version 4. Section 1: Scope. This SOP applies to all stability studies conducted in the Formulation R&D laboratory. Results must be logged within 24 hours of test completion. Section 2: Equipment. HPLC system, pH meter, viscometer. Section 3: Documentation. Results must be entered into LIMS using Form ST-22. Current turnaround target is 30 minutes per batch.",
+        "uploaded_at": "2025-05-01T10:00:00Z"
+      },
+      {
+        "id": "doc_002",
+        "filename": "Decision-Matrix-2024.pdf",
+        "extracted_text": "Formulation Decision Matrix 2024. Go/No-Go criteria: pH 4.5\u20137.5, viscosity 50\u2013500 cP, stability at 40C for 6 months. Priority escalation: any out-of-spec result triggers immediate supervisor review. Common failure modes: pH drift, particulate formation, viscosity changes beyond 15%.",
+        "uploaded_at": "2025-05-01T10:00:00Z"
+      }
+    ],
+    "created_at": "2025-05-01T10:00:00Z",
+    "updated_at": "2026-05-29T13:34:33.478884Z"
+  },
+  {
+    "id": "persona_002",
+    "role": "Formulation Scientist",
+    "department": "Process Chemistry",
+    "years_experience": 5,
+    "expertise_tags": [
+      "API synthesis",
+      "Excipient selection",
+      "Scale-up",
+      "QbD"
+    ],
+    "context_notes": "Focuses on early-stage formulation development. Comfortable with data analysis tools. Main frustration is lack of visibility into upstream raw material quality before it affects formulation work. Interested in predictive modelling but lacks the time to set it up.",
+    "documents": [
+      {
+        "id": "doc_003",
+        "filename": "Formulation-Development-Guide.pdf",
+        "extracted_text": "Formulation Development Guide. Stage 1: Preformulation. Physicochemical characterisation of API. Stage 2: Prototype development. Selection of excipients based on compatibility studies. Stage 3: Optimisation. DOE-driven parameter optimisation. Key decision points: solubility threshold, stability profile at accelerated conditions, manufacturability assessment.",
+        "uploaded_at": "2025-05-02T10:00:00Z"
+      }
+    ],
+    "created_at": "2025-05-02T10:00:00Z",
+    "updated_at": "2025-05-02T10:00:00Z"
+  },
+  {
+    "id": "persona_003",
+    "role": "QA Analyst",
+    "department": "Regulatory & Audit",
+    "years_experience": 6,
+    "expertise_tags": [
+      "GMP compliance",
+      "Audit management",
+      "CAPA",
+      "Documentation review"
+    ],
+    "context_notes": "Responsible for review and sign-off of all stability reports before regulatory submission. Main pain point is receiving incomplete or non-compliant reports that require multiple revision cycles. Values standardisation and traceability above all else.",
+    "documents": [
+      {
+        "id": "doc_004",
+        "filename": "QA-Review-Checklist.pdf",
+        "extracted_text": "QA Review Checklist for Stability Reports. Required fields: batch number, test date, operator ID, equipment calibration reference, raw data attachment, out-of-spec justification if applicable. Common non-conformances: missing calibration reference (34% of rejections), raw data not attached (28%), incorrect form version (18%).",
+        "uploaded_at": "2025-05-03T10:00:00Z"
+      }
+    ],
+    "created_at": "2025-05-03T10:00:00Z",
+    "updated_at": "2025-05-03T10:00:00Z"
+  }
+]

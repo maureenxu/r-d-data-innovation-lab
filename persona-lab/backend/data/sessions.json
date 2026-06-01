@@ -1,0 +1,249 @@
+[
+  {
+    "id": "session_demo",
+    "created_at": "2025-05-28T09:00:00Z",
+    "active_persona_id": "persona_003",
+    "persona_sequence": [
+      "persona_001",
+      "persona_003"
+    ],
+    "template": "workflow_pain_points",
+    "messages": [
+      {
+        "id": "msg_d001",
+        "role": "user",
+        "content": "Walk me through your typical day-to-day documentation workflow.",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:01:00Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d002",
+        "role": "assistant",
+        "content": "After each stability batch I log results into LIMS using Form ST-22. That's the mandatory step \u2014 results must be entered within 24 hours per our SOP. What kills me is that I've already written everything down on the bench sheet, so I'm basically transcribing the same numbers twice. On a heavy day with three batches running, that's close to an hour of just copying data.",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:01:05Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d003",
+        "role": "user",
+        "content": "Where do you lose the most time in your current process?",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:03:00Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d004",
+        "role": "assistant",
+        "content": "Honestly? The biggest bottleneck is the Excel-to-LIMS transfer. We have a spreadsheet template we've been using for years, everyone knows it, the calculations are all built in. But LIMS won't accept a direct import \u2014 every field has to be entered manually through the web interface. I've raised this three times in the last two years. The answer is always 'it's on the roadmap.'",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:03:08Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d005",
+        "role": "user",
+        "content": "What happens when you get an out-of-spec result during a stability run?",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:05:00Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d006",
+        "role": "assistant",
+        "content": "pH drift is the most common failure mode we see. The Decision Matrix sets the go/no-go threshold at pH 4.5 to 7.5, and anything outside that triggers a supervisor review. When that happens I have to stop everything, write up a deviation report, and wait for sign-off before the batch can proceed. The whole process can take half a day if the supervisor is in meetings.",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:05:06Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d007",
+        "role": "user",
+        "content": "How do you currently track which stability samples are due for testing?",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:07:00Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d008",
+        "role": "assistant",
+        "content": "I maintain a manual tracker in Excel to know which samples are due for which timepoint. If a sample gets missed, I only find out when the timepoint window closes. An automated alert system would save us from at least two near-misses a month. It's not in any SOP \u2014 that knowledge just lives in my spreadsheet.",
+        "persona_id": "persona_001",
+        "timestamp": "2025-05-28T09:07:09Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d009",
+        "role": "system",
+        "content": "Switched to QA Analyst",
+        "persona_id": "persona_003",
+        "timestamp": "2025-05-28T09:10:00Z",
+        "is_handoff": true,
+        "handoff_to_persona": "persona_003"
+      },
+      {
+        "id": "msg_d010",
+        "role": "user",
+        "content": "From the QA side, what are the most common reasons a stability report gets rejected on first review?",
+        "persona_id": "persona_003",
+        "timestamp": "2025-05-28T09:11:00Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d011",
+        "role": "assistant",
+        "content": "The most common reason is a missing or mismatched calibration reference \u2014 that's 34% of our rejections. The calibration reference number must match the current service record. Scientists forget it, or copy it from a previous report and it's out of date. Every rejection adds at least two days to the submission timeline.",
+        "persona_id": "persona_003",
+        "timestamp": "2025-05-28T09:11:07Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d012",
+        "role": "user",
+        "content": "What would an ideal submission process look like from your end?",
+        "persona_id": "persona_003",
+        "timestamp": "2025-05-28T09:13:00Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d013",
+        "role": "assistant",
+        "content": "A system that validates required fields before submission, flags missing attachments, and confirms the form version is current. I'd only receive complete, validated reports for substantive review. Right now I'm doing all that validation manually, which is slow and introduces human error.",
+        "persona_id": "persona_003",
+        "timestamp": "2025-05-28T09:13:05Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d014",
+        "role": "user",
+        "content": "How much time does audit preparation currently take you?",
+        "persona_id": "persona_003",
+        "timestamp": "2025-05-28T09:15:00Z",
+        "is_handoff": false
+      },
+      {
+        "id": "msg_d015",
+        "role": "assistant",
+        "content": "Two weeks of full-time effort, because the audit trail is fragmented across systems. If I could generate a complete, traceable record for any batch in one click, that drops to two days. That's the single most valuable thing I can imagine from a digital tools perspective.",
+        "persona_id": "persona_003",
+        "timestamp": "2025-05-28T09:15:08Z",
+        "is_handoff": false
+      }
+    ],
+    "insights": [
+      {
+        "id": "insight_35f426a0",
+        "type": "pain_point",
+        "title": "Manual LIMS data transcription",
+        "body": "Lab technicians transcribe the same results twice \u2014 once on bench sheets and once into LIMS via Form ST-22. On high-volume days this costs close to an hour of non-value work per technician.",
+        "source_persona_id": "persona_001"
+      },
+      {
+        "id": "insight_14d0a1ff",
+        "type": "pain_point",
+        "title": "No direct Excel-to-LIMS import",
+        "body": "Despite a widely used Excel template with built-in calculations, LIMS requires manual field-by-field entry through its web interface. Direct bulk import has been requested repeatedly but not delivered.",
+        "source_persona_id": "persona_001"
+      },
+      {
+        "id": "insight_7930e2ab",
+        "type": "pain_point",
+        "title": "Calibration mismatch halts HPLC runs",
+        "body": "A calibration reference number mismatch \u2014 even from a minor SOP revision bump \u2014 flags the entire run and requires rework. Technicians maintain unofficial cheat sheets because the system provides no proactive warning.",
+        "source_persona_id": "persona_001"
+      },
+      {
+        "id": "insight_0d8cec63",
+        "type": "unmet_need",
+        "title": "Raw material quality visibility upstream",
+        "body": "Formulation scientists receive API lots without polymorphic form or particle size data unless they request it, which takes 3\u20135 days. Earlier visibility would allow parallel planning and prevent wasted work when lots fail at Stage 2.",
+        "source_persona_id": "persona_002"
+      },
+      {
+        "id": "insight_d91f8416",
+        "type": "unmet_need",
+        "title": "Shared repository for formulation data",
+        "body": "DOE outputs and characterisation data live in individual scientists' JMP files and PDFs, not a queryable database. Duplicate experiments are regularly run because there is no institutional memory for formulation history.",
+        "source_persona_id": "persona_002"
+      },
+      {
+        "id": "insight_5b4726ed",
+        "type": "constraint",
+        "title": "GMP mandates primary instrument records",
+        "body": "QA policy requires the raw instrument output file (chromatogram, bench record) attached to every stability report \u2014 a LIMS printout is not sufficient. This is a GMP requirement and accounts for 28% of first-review rejections.",
+        "source_persona_id": "persona_003"
+      },
+      {
+        "id": "insight_db9413eb",
+        "type": "pain_point",
+        "title": "Deprecated form versions in active use",
+        "body": "18% of submission rejections are caused by scientists using locally saved copies of outdated Form ST-22 versions. No system prevents submission of a deprecated form \u2014 the error is only caught at QA review.",
+        "source_persona_id": "persona_003"
+      },
+      {
+        "id": "insight_52a0b148",
+        "type": "opportunity",
+        "title": "Pre-submission validation could cut rejection rate",
+        "body": "A system that validates required fields, checks form version, and confirms raw data is attached before submission could eliminate the majority of first-review rejections, which currently add at least two days per rejection cycle.",
+        "source_persona_id": "persona_003"
+      }
+    ],
+    "requirements": [
+      {
+        "id": "req_d001",
+        "req_id": "REQ-01",
+        "statement": "System must support bulk import from existing Excel templates into LIMS, eliminating manual field-by-field re-entry for stability batch results.",
+        "category": "Integration",
+        "priority": "high",
+        "source_insight_id": "insight_d002",
+        "source_type": "pain_point"
+      },
+      {
+        "id": "req_d002",
+        "req_id": "REQ-02",
+        "statement": "System must validate equipment calibration reference numbers against current service records at submission time and block submission if a mismatch is detected.",
+        "category": "Quality",
+        "priority": "high",
+        "source_insight_id": "insight_d005",
+        "source_type": "pain_point"
+      },
+      {
+        "id": "req_d003",
+        "req_id": "REQ-03",
+        "statement": "System must perform pre-submission validation of stability reports \u2014 checking required fields, form version currency, and raw data attachment \u2014 and prevent submission of incomplete records.",
+        "category": "Quality",
+        "priority": "high",
+        "source_insight_id": "insight_d006",
+        "source_type": "opportunity"
+      },
+      {
+        "id": "req_d004",
+        "req_id": "REQ-04",
+        "statement": "System must send automated alerts to assigned technicians when a stability sample timepoint window opens, with a configurable lead time before the window closes.",
+        "category": "Automation",
+        "priority": "high",
+        "source_insight_id": "insight_d004",
+        "source_type": "unmet_need"
+      },
+      {
+        "id": "req_d005",
+        "req_id": "REQ-05",
+        "statement": "System must route out-of-spec deviation reports to supervisors with a defined SLA and automated escalation if sign-off is not completed within the SLA window.",
+        "category": "Automation",
+        "priority": "medium",
+        "source_insight_id": "insight_d003",
+        "source_type": "pain_point"
+      },
+      {
+        "id": "req_d006",
+        "req_id": "REQ-06",
+        "statement": "System must generate a complete, auditable batch record \u2014 including instrument data, operator history, and active SOP version \u2014 in a single exportable view within 2 minutes.",
+        "category": "Reporting",
+        "priority": "medium",
+        "source_insight_id": "insight_d007",
+        "source_type": "constraint"
+      }
+    ]
+  }
+]
