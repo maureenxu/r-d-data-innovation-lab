@@ -1,4 +1,4 @@
-# Persona Lab
+# R&D Data Innovation Lab
 
 An internal R&D co-design prototype that lets data scientists interview AI-powered digital personas of lab technicians — gathering workflow requirements without needing real technician time. Personas are grounded in uploaded documents and free-text knowledge notes.
 

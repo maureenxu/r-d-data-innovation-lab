@@ -1,4 +1,4 @@
-Stage and commit all current changes with a clear, concise commit message.
+Stage and commit all current changes with a clear, concise commit message. Execute all steps automatically without asking for confirmation.
 
 ## Steps
 
